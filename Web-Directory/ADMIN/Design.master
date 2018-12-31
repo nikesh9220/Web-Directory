@@ -1,0 +1,344 @@
+﻿<%@ Master Language="VB" CodeFile="Design.master.vb" Inherits="ADMIN_Design" %>
+
+<!DOCTYPE html>
+
+   
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Directory</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link href="css/hover-min.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/main-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    
+    <!-- Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+      
+
+  
+
+
+</head>
+<body>
+
+<div id="loader">
+    <div class="book">
+      <div class="book__page"></div>
+      <div class="book__page"></div>
+      <div class="book__page"></div>
+    </div>
+</div>
+
+	<!-- start header-->
+    <div id="header">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-7">
+                	<div id="left-header">
+                    	<h1>For more info call: <span>+91-7984258200</span><br> write on email:-drashti9220@mail.com</h1>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-right">
+                	<div id="right-header">
+                    	<h1>Discover New City</h1>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header-->
+
+	<!-- start logo section-->
+    <div id="logo-section">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-3 col-xs-7">
+                	<div id="logo">
+                    	<a href="index.html"><img src="images/04.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-sm-9 text-right">
+                	<nav class="navbar navbar-default">
+                    	<!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#thrift-1" aria-expanded="false">
+                                <span class="sr-only">Toggle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+    				  <div class="collapse navbar-collapse" id="thrift-1">
+          				<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                         
+                        </div><!-- /.navbar-collapse -->
+               		</nav>
+                </div>	
+            </div>
+        </div>
+    </div>
+    <!-- end logo section-->
+    
+    <!-- start search section-->
+    <div id="search-section">
+    	<div class="container">
+        	<div class="row">
+            <form id="search-form">
+            	<div class="col-sm-12">
+                      <div id="icons-list">
+                                <a href="Area.aspx"><i class="fa fa-th"></i>Add Area  </a>
+                               <a href="Category.aspx"><i class="fa fa-th"></i>Add Category  </a>
+                               <a href="Subcategory.aspx"><i class="fa fa-th"></i>Add SubCategory </a>
+                               <a href="Addscheme.aspx"><i class="fa fa-th"></i>Add Schemes  </a>
+                               <a href="Security.aspx"><i class="fa fa-th"></i>Add Security  </a>
+                               <a href="../USER/logout.aspx"><i class="fa fa-th"></i>Logout  </a>
+                              
+                            </div>
+                 </div>
+                 </form>
+               </div>
+             </div>
+       </div>
+    <!-- end search section-->
+    
+     <!-- start banner map-->
+     
+    <!-- end banner map-->
+    
+    <!-- start main banner-->
+    <div id="main-banner">
+    	<div class="container">
+        	<div class="row">
+            <div class="col-sm-12 text-center">
+                  
+ 
+ </div>
+
+</div>            	
+           
+        </div>
+    </div>
+    <!-- end main banner-->
+    <!-- start search categories-->
+    <div id="search-categories">
+    	<div class="container">
+        	<div class="row">
+            	  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <!-- end search categories-->
+    
+    
+    
+   
+    
+    
+    
+    
+    <!-- start footer-->
+    <div id="footer">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-12 text-center">
+                	<div id="footer-text">
+                    	<p>All copyrights reserved @ 2018 - Design & Development by drashti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer-->
+    
+	<!-- Scripts -->
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/jquery.bxslider-rahisified.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="js/custom.js"></script>
+    
+    <script>
+	
+	/*************** show and hide map and banner ********************/
+	$(document).ready(function(e) {
+       $("#banner-map").hide();
+		$("#banner-link").click(function(){
+			$("#main-banner,#banner-map").slideToggle("slow");
+			initmap();
+		});
+		$("#map-link").click(function(){
+			$("#main-banner,#banner-map").slideToggle("slow");
+		}); 
+    });
+		
+	// home page map
+
+	function initmap() {
+	  var map = new google.maps.Map(document.getElementById("homemap"), {
+		zoom:10,
+		scrollwheel: false ,
+		center: new google.maps.LatLng(40.6700, -73.9400), // New York
+		
+		styles: [
+		{
+			"featureType": "administrative",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"color": "#444444"
+				}
+			]
+		},
+		{
+			"featureType": "landscape",
+			"elementType": "all",
+			"stylers": [
+				{
+					"color": "#f2f2f2"
+				}
+			]
+		},
+		{
+			"featureType": "poi",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 45
+				}
+			]
+		},
+		{
+			"featureType": "road.highway",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road.arterial",
+			"elementType": "labels.icon",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "all",
+			"stylers": [
+				{
+					"color": "#ffbe00"
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		}
+	]
+		
+	});
+    
+    setMarkers(map);
+	}
+	
+	// Data for the markers consisting of a Country name, Item Name, Address for Item, a LatLng and a zIndex // for the order in which these markers should display on top of each other.
+	var item_location = [
+	  ['New York', 'Luxary Car for Sale', '9089 Surrey Lane Madison Heights, MI 48071', 40.6700, -73.9400, 4,'map-icon1.png'],
+	  ['Elezabeth', 'Modern Sunglasses', '1255 Union Street Loxahatchee, FL 33470', 40.66605,-74.200974, 5,'map-icon2.png'],
+	  ['Queens', 'House for Sale', '5986 Main Street North Paterson, NJ 07501', 40.742054,-73.769417, 3,'map-icon1.png'],
+	  ['Edison', 'Fried Rice Dish Delivery', '6704 Fairview Road Evans, GA 30809', 40.518715,-74.412095, 2,'map-icon3.png'],
+	  ['Garden City', 'Italian Pasta Delivery', '6704 Fairview Road Evans, GA 30809', 40.726768,-73.634295, 1,'map-icon3.png'],
+	  ['Clifton', 'Apartment for Rent', '5986 Main Street North Paterson, NJ 07501', 40.858433,-74.163755, 1,'map-icon2.png'],	  
+	];
+	
+	function setMarkers(map) {
+        // Adds markers to the map.
+
+        // Marker sizes are expressed as a Size of X,Y where the origin of the image
+        // (0,0) is located in the top left of the image.
+
+        // Origins, anchor positions and coordinates of the marker increase in the X
+        // direction to the right and in the Y direction down.
+
+           
+        // Shapes define the clickable region of the icon. The type defines an HTML
+        // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+        // The final coordinate closes the poly by connecting to the first coordinate.
+        var shape = {
+          coords: [1, 1, 1, 52, 50, 52, 50, 1],
+          type: 'poly'
+        };
+        for (var i = 0; i < item_location.length; i++) {
+            var item = item_location[i];
+            var image = {
+              url: 'images/'+item[6],
+              
+              size: new google.maps.Size(52, 53),
+              
+              origin: new google.maps.Point(0, 0),
+              
+              anchor: new google.maps.Point(0, 53)
+            };
+            var infoWindow = new google.maps.InfoWindow({
+                content: item[0],
+            });
+            var marker = new google.maps.Marker({
+            position: {lat: item[3], lng: item[4]},
+            animation: google.maps.Animation.DROP,
+            map: map,
+            icon: image,
+            shape: shape,
+            title: item[0],
+            zIndex: item[5]
+          });
+          (function (marker, item) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                    infoWindow.setContent("<div style = 'width:220px;min-height:40px' id='m-info-window'> <h6 class='info-window-hding'>" + item[1] + "</h6> <p class='info-window-desc'>" + item[2] + "</p> </div>");
+                    infoWindow.open(map, marker);
+                });                
+            })(marker, item);
+        }
+      }    
+
+	</script>
+   
+   	
+</body>
+</html>

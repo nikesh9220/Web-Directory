@@ -1,0 +1,23 @@
+﻿
+ body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        .table
+        {
+           
+            height :200;
+            width: 200;
+        }
+        .table th
+        {
+            background-color: #F7F7F7;
+            color: #333;
+            font-weight: bold;
+        }
+        .table th, .table td
+        {
+           
+            border: 1px solid #ccc;
+        }

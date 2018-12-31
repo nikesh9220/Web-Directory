@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Directin</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link href="css/hover-min.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.tagsinput.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/fileinput.css">
+	<link rel="stylesheet" type="text/css" href="css/main-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    
+    <!-- Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body data-spy="scroll" data-target=".scrollspy">
+
+<div id="loader">
+    <div class="book">
+      <div class="book__page"></div>
+      <div class="book__page"></div>
+      <div class="book__page"></div>
+    </div>
+</div>
+
+	<!-- start header-->
+    <div id="header">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-7">
+                	<div id="left-header">
+                    	<h1>For more info call: <span>+0432 987 65432</span><br> write on email: <a href="add-listings.html#">directin@mail.com</a></h1>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-right">
+                	<div id="right-header">
+                    	<h1>Discover New City</h1>
+                        <a href="add-listings.html#"><i class="fa fa-facebook"></i></a>
+                        <a href="add-listings.html#"><i class="fa fa-twitter"></i></a>
+                        <a href="add-listings.html#"><i class="fa fa-google-plus"></i></a>
+                        <a href="add-listings.html#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header-->
+
+	<!-- start logo section-->
+    <div id="logo-section">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-3 col-xs-7">
+                	<div id="logo">
+                    	<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-sm-9 text-right">
+                	<nav class="navbar navbar-default">
+                    	<!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#thrift-1" aria-expanded="false">
+                                <span class="sr-only">Toggle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+    				  <div class="collapse navbar-collapse" id="thrift-1">
+          				<a href="add-listings.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                            <div id="icons-list">
+                                <a href="categories.html"><i class="fa fa-th"></i>Browse Categories  </a>
+                                <a href="add-listings.html"><i class="fa fa-pencil-square-o"></i>Submit Listings  </a>
+                                <a href="contact.html"><i class="fa fa-map-o"></i>contact us </a>
+                            </div>
+                        </div><!-- /.navbar-collapse -->
+               		</nav>
+                </div>	
+            </div>
+        </div>
+    </div>
+    <!-- end logo section-->
+
+	<!--start add listings inner header section-->  
+      
+    <div id="add-listings-inner-header">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-12 text-center">
+                	<div class="inner-header-text">
+                    	<h1>Submit listings</h1>
+                        <a href="index.html">Home</a>
+                        <i class="fa fa-circle"></i>
+                        <a href="add-listings.html"><span>submit listings</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end add listings inner header section-->
+
+	<!-- start add listings-->
+    <div id="add-listings">
+    	<div class="container clear">
+        	<div class="row">
+            	<div class="col-sm-12 col-md-9">
+                	<!-- start user form-->
+                	<div id="user-option">
+                    	<h1>Existed user or New?</h1>
+                        <hr>
+                        <p><span id="sign-in" class="selected">Sign in</span> or <span id="sign-up">Sign up</span> If you don’t have an account you can create one below by entering your email address or username. Your account details will be confirmed via email.</p>
+                        <div id="user-form">
+                        	<form id="user-signin">
+                                <div class="col-sm-6 nopadding-left">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="domain" name="formInput[domain]" placeholder="you@yourdomain.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 nopadding-right">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="password" name="formInput[password]" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form id="user-signup" class="hide-form">
+                                <div class="col-sm-6 nopadding-left">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="username" name="formInput[username]" placeholder="Username" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 nopadding-right">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" name="formInput[email]" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end user form-->
+                    <!-- start listings-->
+                    <div id="enter-listings">
+                    	<h1>enter listings detail</h1>
+                        <hr>
+                        <div id="title">
+                        	<form id="title-form">
+                            	<div class="col-sm-12 nopadding">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="add-title" name="formInput[title]" placeholder="Ad Title Goes here |" required>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <textarea></textarea>
+                                <div class="clearfix"></div>
+                                <div class="col-sm-12 nopadding">
+                                	<div class="form-group">
+                                    	<input id="tags_1" type="text" class="tags form-control" placeholder="Tags" required />
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div id="select-category">
+                                	<div class="col-sm-6 nopadding-left">
+                                    	<select class="form-control" name="parent-cateogry" id="parentCategory">
+                                        	<option value="0"> Select Category</option> 
+                                        	<option value="1">Business</option> 
+                                            <option value="2">Jobs</option> 
+                                            <option value="3">Real Estate</option> 
+                                            <option value="4">Settings</option> 
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 nopadding-right">
+                                    	<select class="form-control" name="sub-cateogry" id="subCategory" disabled>
+											<option value="0"> Select Sub Category</option> 
+											<option value="1"> Electronics</option> 
+                                            <option value="2"> Vehicles</option> 
+                                            <option value="3"> Travel</option> 
+                                            <option value="4"> Stationary</option> 
+										</select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div id="phone-section">
+                                	<div class="col-sm-6 nopadding-left">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="sale-price" name="formInput[price]" placeholder="Sale Price" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 nopadding-right">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="phone" name="formInput[phone]" placeholder="Phone" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end listings-->
+                    
+                    <!-- start location detail-->
+                    <div id="location-detail">
+                    	<h1>location details</h1>
+                        <hr>
+                    	<form id="locations">
+                        	<div class="col-sm-12 nopadding">
+                            	<div class="inner-addon left-addon">
+                                  <i class="fa fa-map-marker"></i>      
+                                  <input type="text" class="form-control" id="addressfield" name="formInput[location]" placeholder="98 Madison St, New York, NY 10002, USA" required>
+                                </div>
+                            </div>
+                        </form>
+                         <!-- start location map-->
+                        <div id="location-map">
+                             <div id="map"></div>
+                        </div>
+                        <!-- end location map-->
+                    </div>
+                    <!-- end location detail-->
+                    <!--start gallery images-->
+                    <div id="gallery-images">
+                    	<h1>gallery images</h1>
+                        <hr>
+                        <div id="add-images">
+                            <div class="col-sm-6 col-md-4 nopadding text-left">
+                                <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
+                            </div>
+                            <div class="col-sm-6 col-md-4 nopadding text-center">
+                                <input id="file-1a" class="file" type="file" multiple data-min-file-count="1">
+                            </div>
+                            <div class="col-sm-6 col-md-4 nopadding text-right">
+                               <input id="file-2a" class="file" type="file" multiple data-min-file-count="1">
+                            </div>
+                            <div id="add-new-images">
+                            	<div class="col-sm-6 col-md-4 nopadding text-left" style="display:none;">
+                                    <input id="file-3a" class="file" type="file" multiple data-min-file-count="1">
+                                </div>
+                                <div class="col-sm-6 col-md-4 nopadding text-center" style="display:none;">
+                                    <input id="file-4a" class="file" type="file" multiple data-min-file-count="1">
+                                </div>
+                                <div class="col-sm-6 col-md-4 nopadding text-right" style="display:none;">
+                                   <input id="file-5a" class="file" type="file" multiple data-min-file-count="1">
+                                </div>
+                                <div class="col-sm-6 col-md-4 nopadding text-left" style="display:none;">
+                                    <input id="file-6a" class="file" type="file" multiple data-min-file-count="1">
+                                </div>
+                                <div class="col-sm-6 col-md-4 nopadding text-center" style="display:none;">
+                                    <input id="file-7a" class="file" type="file" multiple data-min-file-count="1">
+                                </div>
+                                <div class="col-sm-6 col-md-4 nopadding text-right" style="display:none;">
+                                   <input id="file-8a" class="file" type="file" multiple data-min-file-count="1">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <span class="addsection">Add More Images</span>
+                    </div>
+                    <!-- end gallery images-->
+                    <!-- start packages-->
+                    <div id="price-package">
+                    	<h1>select price package</h1>
+                        <hr>
+                        <form id="packages">
+                          <input type="radio" name="package" value="silver">Silver<br>
+                          <input type="radio" name="package" value="standard">Standard<br>
+                          <input type="radio" name="package" value="platinium">Platinium
+                        </form>
+                        <p>Currently you have no active plan for featured ads. You must purchase a Featured Pricing Plan to be able to publish a Featured Ad.</p>
+                    	<div id="preview-add">
+                        	<button type="submit" id="preview">preview add</button>
+                        </div>
+                    </div>
+                    <!-- end packages-->
+                </div>
+                <div class="col-sm-12 col-md-3 scrollspy">
+                	<div id="process" data-spy="affix" data-offset-top="40">
+                    	<h1>process</h1>
+                        <!-- <div id="checkdiv"></div> -->                        
+                        	<!-- <div> -->
+                            <!-- <nav id="process-section"> -->
+                        <ul id="nav" class="nav list-unstyled">
+                            <li class="active">
+                                <a href="add-listings.html#user-option" class="scroll"><span>1.</span>General</a>
+                            </li>                                    
+                            <hr>
+                            <li>
+                                <a href="add-listings.html#enter-listings" class="scroll"><span>2.</span>Listings Details</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="add-listings.html#location-detail" class="scroll"><span>3.</span>Location Details</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="add-listings.html#gallery-images" class="scroll"><span>4.</span>Gallery Images</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="add-listings.html#price-package" class="scroll"><span>5.</span>Pricing Plan</a>
+                            </li>                                    
+                            <hr>
+                            <li>
+                                <a href="add-listings.html#preview-add" class="scroll"><span>6.</span>Preview Add</a>
+                            </li>
+                            <hr>
+                            <!-- <li>
+                                <a href="#" class="scroll"><span>7.</span>Publish Add</a>
+                            </li> -->
+                        </ul>
+                            <!-- </nav> -->
+							<!-- </div> -->
+                    </div>
+                    <div id="sidebar-navigation">
+                    	<h1>navigation</h1>
+                        <div id="siderbar-navigation-section">
+                        	<a href="add-listings.html#">Submits</a>
+                            <hr>
+                            <a href="add-listings.html#">My Listings</a>
+                            <hr>
+                            <a href="add-listings.html#">My favourites</a>
+                            <hr>
+                            <a href="add-listings.html#">transactions</a>
+                            <hr>
+                            <a href="add-listings.html#">profile</a>
+                            <hr>
+                            <a href="add-listings.html#">change password</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end add listings-->
+    
+     <!-- start prefooter-->
+    <div id="prefooter">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-6 col-md-3 wow">
+                	<div class="prefooter-heading">
+                    	<h1>recent listings</h1>
+                    </div>
+                    <div id="prefooter-list-image">
+                    	<div class="prefooter-detail">
+                        	<div class="col-sm-4 col-xs-4 nopadding-left">
+                            	<div class="prefooter-detail-image">
+                                	<img src="images/prefooter-img1.png" alt="prefooter img1">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-8 nopadding-left">
+                            	<div class="prefooter-detail-text">
+                                	<a href="listings-detail.html"><h1>Car Audio Set Sale</h1></a>
+                                    <p>Price: $210</p>
+                                    <h3><i class="fa fa-map-marker"></i>Fairview Road, NY</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="prefooter-detail">
+                        	<div class="col-sm-4 col-xs-4 nopadding-left">
+                            	<div class="prefooter-detail-image">
+                                	<img src="images/prefooter-img2.png" alt="prefooter img2">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-8 nopadding-left">
+                            	<div class="prefooter-detail-text">
+                                	<a href="listings-detail.html"><h1>Complete Kitchen Sale</h1></a>
+                                    <p>Price: $20k</p>
+                                    <h3><i class="fa fa-map-marker"></i>Fairview Road, NY</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="prefooter-detail">
+                        	<div class="col-sm-4 col-xs-4 nopadding-left">
+                            	<div class="prefooter-detail-image">
+                                	<img src="images/prefooter-img3.png" alt="prefooter img3">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-8 nopadding-left">
+                            	<div class="prefooter-detail-text">
+                                	<a href="listings-detail.html"><h1>Women Shoes Collection</h1></a>
+                                    <p>Price: $30</p>
+                                    <h3><i class="fa fa-map-marker"></i>Fairview Road, NY</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                	<div class="prefooter-heading">
+                    	<h1>feature categories</h1>
+                    </div>
+                    <div id="prefooter-list-categories">
+                    	<ul>
+                        	<li><span>12</span><a href="add-listings.html#">Automotive</a></li>
+                            <li><span>07</span><a href="add-listings.html#">Educational</a></li>
+                            <li><span>44</span><a href="add-listings.html#">Foods</a></li>
+                            <li><span>27</span><a href="add-listings.html#">Jobs</a></li>
+                            <li><span>13</span><a href="add-listings.html#">Movies</a></li>
+                            <li><span>46</span><a href="add-listings.html#">Property</a></li>
+                            <li><span>89</span><a href="add-listings.html#">Shopping</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                	<div class="prefooter-heading">
+                    	<h1>contact info</h1>
+                    </div>
+                    <div id="prefooter-contact-info">
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="contact-info">
+                    	<div class="col-sm-1 col-xs-2 nopadding">
+                        	<div class="contact-icon">
+                            	<i class="fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 col-xs-10">
+                        	<div class="contact-text">
+                            	<h1>142 North Park Avenue</h1>
+                                <p>New York, USA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                    	<div class="col-sm-1 col-xs-2 nopadding">
+                        	<div class="contact-icon">
+                            	<i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 col-xs-10">
+                        	<div class="contact-text">
+                            	<h1><a href="add-listings.html#">+0432 987 65432</a></h1>
+                                <p><a href="add-listings.html#">support@sitename.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                    	<div class="col-sm-1 col-xs-2 nopadding">
+                        	<div class="contact-icon">
+                            	<i class="fa fa-clock-o"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 col-xs-10">
+                        	<div class="contact-text">
+                            	<h1>Monday - Friday</h1>
+                                <p>9:00 am - 5:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                	<div class="prefooter-heading">
+                    	<h1>tags</h1>
+                    </div>
+                    <div id="prefooter-tags">
+                    	<a href="add-listings.html#" class="hvr-sweep-to-bottom">automotive</a>
+                        <a href="add-listings.html#" class="hvr-sweep-to-bottom">jobs</a>
+                        <a href="add-listings.html#" class="hvr-sweep-to-bottom">movies</a>
+                        <a href="add-listings.html#" class="hvr-sweep-to-bottom">food</a>
+                        <a href="add-listings.html#" class="hvr-sweep-to-bottom">property</a>
+                        <a href="add-listings.html#" class="hvr-sweep-to-bottom">shopping</a>
+                        <a href="add-listings.html#" class="hvr-sweep-to-bottom">education</a>
+                        <a href="add-listings.html#" class="hvr-sweep-to-bottom">photography</a>
+                    </div>
+                    <div class="prefooter-heading">
+                    	<h1>follow us</h1>
+                    </div>
+                    <div class="social">
+						<a href="https://www.facebook.com/" class="hvr-sweep-to-top">
+							<i class="fa fa-facebook"></i>
+
+						</a>
+						<a href="https://www.twitter.com/" class="hvr-sweep-to-top">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="https://plus.google.com/" class="hvr-sweep-to-top">
+							<i class="fa fa-google-plus"></i>
+						</a>
+						<a href="https://www.linkedin.com/" class="hvr-sweep-to-top">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end prefooter-->
+    
+    <!-- start footer-->
+    <div id="footer">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-12 text-center">
+                	<div id="footer-text">
+                    	<p>All copyrights reserved @ 2016 - Design &amp; Development by <a href="add-listings.html#">Ewebcraft</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer-->
+    
+	<!-- Scripts -->
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/jquery.bxslider-rahisified.min.js"></script>
+    <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/fileinput.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBrGQ3WXjDyt6lu6OLS4RDNBXYb3Wr-l_Y"></script>
+	<script src="js/custom.js"></script>
+   	<script>tinymce.init({ selector:'textarea' });
+    
+    $('#tags_1').tagsInput({
+		defaultText:'Tags',
+		width:'auto'
+	});
+	
+	google.maps.event.addDomListener(window, 'load', initialize);
+	
+	//listings map
+	function initialize() {
+	// Basic options for a simple Google Map
+	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+	var mapOptions = {
+		// How zoomed in you want the map to start at (always required)
+		zoom: 11,
+		scrollwheel: false ,
+
+		// The latitude and longitude to center the map (always required)
+		center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+		// How you would like to style the map. 
+		// This is where you would paste any style found on Snazzy Maps.
+		styles: [
+		{
+			"featureType": "administrative",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"color": "#444444"
+				}
+			]
+		},
+		{
+			"featureType": "landscape",
+			"elementType": "all",
+			"stylers": [
+				{
+					"color": "#f2f2f2"
+				}
+			]
+		},
+		{
+			"featureType": "poi",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 45
+				}
+			]
+		},
+		{
+			"featureType": "road.highway",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road.arterial",
+			"elementType": "labels.icon",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "all",
+			"stylers": [
+				{
+					"color": "#ffbe00"
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		}
+	]
+	};
+
+    	// Get the HTML DOM element that will contain your map 
+    	// We are using a div with id="map" seen below in the <body>
+    	var mapElement = document.getElementById('map');
+    	// Create the Google Map using our element and options defined above
+    	map = new google.maps.Map(mapElement, mapOptions);
+    	
+    	geocoder = new google.maps.Geocoder;
+    	
+    	 map.addListener('dragend', function() {
+    	  getGeoAddress();
+    	 });
+     
+    	var controlDiv = document.createElement('div');
+    	 var myControl = new MyControl(controlDiv);
+    	 controlDiv.index = 1;
+    	 map.controls[google.maps.ControlPosition.CENTER].push(controlDiv);
+
+    }
+
+	// function for map image on listings page
+	function MyControl(controlDiv, map) {
+    	 var controlImg = document.createElement('IMG');
+    	 controlImg.style.width = '96px';
+    	 controlImg.style.height = '96px';
+    	 //controlImg.style.marginBottom = '30px';
+    	 controlImg.width = '96';
+    	 controlImg.height = '96';
+    	 controlImg.src = 'images/green-home2.png?3';
+    	 controlDiv.appendChild(controlImg);
+	}
+	
+	//geocode address
+	function getGeoAddress(){
+    	 var Tmp = map.getCenter(); 
+    	 geocoder.geocode({
+    	  latLng: Tmp
+    	 }, function(results, status) {
+    	  if (status == google.maps.GeocoderStatus.OK) {
+    	   if (results[0]) {
+    		$('#addressfield').val( results[0].formatted_address );
+    		//console.log(results[0]); //results[0].formatted_address;
+    	   }
+    	  } else {
+    	   $('#addressfield').val(Unknwon );
+    	  }
+    	 }); 
+    }
+
+    $(document).ready(function() {
+        
+        "use strict";
+
+        $('#process').affix({
+            offset: {     
+              top: $('#process').offset().top,
+              bottom: ($('#footer').outerHeight(true) + $('#prefooter').outerHeight(true)) + 125
+            }
+        });
+        
+        /* Smooth-Scroll */
+
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+        });
+        
+        /* Smooth-Scroll */
+        
+    });
+	
+ </script>
+
+</body>
+</html>
